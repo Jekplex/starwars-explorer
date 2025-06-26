@@ -1,6 +1,30 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<div class="text-center mt-10 text-gray-700">
+  <h1 class="text-4xl font-bold ">STAR WARS EXPLORER</h1>
+  <p class="text-2xl max-w-110 m-auto mt-5">Explore the Star Wars movies and series the way you want to.</p>
+</div>
+
+<div class="flex justify-center mt-7">
+  <div class="inline-flex border border-gray-300 rounded-full overflow-hidden">
+    
+    <button 
+      (click)="setReleaseView(false)"
+      class="px-4 py-2 font-medium rounded-l-full focus:outline-none"
+      [ngClass]="!getReleaseView() ? 'bg-white text-gray-800' : 'bg-transparent text-gray-500 hover:bg-gray-100'">
+        CHRONOLOGICAL ORDER
+    </button>
+
+    <button 
+      (click)="setReleaseView(true)"
+      class="px-4 py-2 font-medium rounded-r-full focus:outline-none"
+      [ngClass]="getReleaseView() ? 'bg-white text-gray-800' : 'bg-transparent text-gray-500 hover:bg-gray-100'">
+        RELEASE ORDER
+    </button>
+    
+  </div>
+</div>
+
+
+
 
 
 <router-outlet />

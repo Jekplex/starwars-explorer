@@ -4,10 +4,11 @@ export interface ContentItemOrder {
 }
 
 export interface ContentItem {
-    readonly id: string;
-    readonly title: string;
-    readonly type: 'movie' | 'series';
-    readonly releaseYear: number;
-    readonly episode?: string; // turn to subtitle maybe?
-    readonly order: ContentItemOrder;
+  readonly id: string;
+  readonly title: string;
+  readonly type: 'movie' | 'series';
+  readonly releaseYear: number;
+  readonly episode?: string; // turn to subtitle maybe?
+  readonly poster: string;
+  readonly order: ContentItemOrder;
 }

@@ -6,6 +6,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'The Acolyte',
     type: 'series',
     releaseYear: 2024,
+    poster: '/posters/the-acolyte.jpg',
     order: { release: 24, chronological: 1 }
   },
   {
@@ -14,6 +15,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 1999,
     episode: 'Episode I',
+    poster: '/posters/phantom-menace.jpg',
     order: { release: 4, chronological: 2 }
   },
   {
@@ -22,6 +24,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 2002,
     episode: 'Episode II',
+    poster: '/posters/attack-of-the-clones.jpg',
     order: { release: 5, chronological: 3 }
   },
   {
@@ -29,6 +32,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars: The Clone Wars',
     type: 'movie',
     releaseYear: 2008,
+    poster: '/posters/clone-wars-movie.jpg',
     order: { release: 7, chronological: 4 }
   },
   {
@@ -36,6 +40,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars: The Clone Wars',
     type: 'series',
     releaseYear: 2008,
+    poster: '/posters/clone-wars-series.jpg',
     order: { release: 8, chronological: 5 }
   },
   {
@@ -43,6 +48,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars: Tales of the Jedi',
     type: 'series',
     releaseYear: 2022,
+    poster: '/posters/tales-of-the-jedi.jpg',
     order: { release: 21, chronological: 6 }
   },
   {
@@ -51,6 +57,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 2005,
     episode: 'Episode III',
+    poster: '/posters/revenge-of-the-sith.jpg',
     order: { release: 6, chronological: 7 }
   },
   {
@@ -58,6 +65,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars: Tales of the Empire',
     type: 'series',
     releaseYear: 2024,
+    poster: '/posters/tales-of-the-empire.jpg',
     order: { release: 23, chronological: 8 }
   },
   {
@@ -65,6 +73,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars: Tales of the Underworld',
     type: 'series',
     releaseYear: 2025,
+    poster: '/posters/tales-of-the-underworld.jpg',
     order: { release: 26, chronological: 9 }
   },
   {
@@ -72,6 +81,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars: The Bad Batch',
     type: 'series',
     releaseYear: 2021,
+    poster: '/posters/the-bad-batch.jpg',
     order: { release: 18, chronological: 10 }
   },
   {
@@ -79,6 +89,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Solo: A Star Wars Story',
     type: 'movie',
     releaseYear: 2018,
+    poster: '/posters/solo.jpg',
     order: { release: 13, chronological: 11 }
   },
   {
@@ -86,6 +97,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Obi-Wan Kenobi',
     type: 'series',
     releaseYear: 2022,
+    poster: '/posters/obi-wan-kenobi.jpg',
     order: { release: 19, chronological: 12 }
   },
   {
@@ -93,6 +105,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Andor',
     type: 'series',
     releaseYear: 2022,
+    poster: '/posters/andor.jpg',
     order: { release: 20, chronological: 13 }
   },
   {
@@ -100,6 +113,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars Rebels',
     type: 'series',
     releaseYear: 2014,
+    poster: '/posters/rebels.jpg',
     order: { release: 9, chronological: 14 }
   },
   {
@@ -107,6 +121,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Rogue One: A Star Wars Story',
     type: 'movie',
     releaseYear: 2016,
+    poster: '/posters/rogue-one.jpg',
     order: { release: 11, chronological: 15 }
   },
   {
@@ -115,6 +130,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 1977,
     episode: 'Episode IV',
+    poster: '/posters/a-new-hope.jpg',
     order: { release: 1, chronological: 16 }
   },
   {
@@ -123,6 +139,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 1980,
     episode: 'Episode V',
+    poster: '/posters/empire-strikes-back.jpg',
     order: { release: 2, chronological: 17 }
   },
   {
@@ -131,6 +148,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 1983,
     episode: 'Episode VI',
+    poster: '/posters/return-of-the-jedi.jpg',
     order: { release: 3, chronological: 18 }
   },
   {
@@ -138,6 +156,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'The Mandalorian',
     type: 'series',
     releaseYear: 2019,
+    poster: '/posters/the-mandalorian.jpg',
     order: { release: 15, chronological: 19 }
   },
   {
@@ -145,6 +164,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'The Book of Boba Fett',
     type: 'series',
     releaseYear: 2021,
+    poster: '/posters/book-of-boba-fett.jpg',
     order: { release: 17, chronological: 20 }
   },
   {
@@ -152,6 +172,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Ahsoka',
     type: 'series',
     releaseYear: 2023,
+    poster: '/posters/ahsoka.jpg',
     order: { release: 22, chronological: 21 }
   },
   {
@@ -159,6 +180,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Skeleton Crew',
     type: 'series',
     releaseYear: 2024,
+    poster: '/posters/skeleton-crew.jpg',
     order: { release: 25, chronological: 22 }
   },
   {
@@ -166,6 +188,7 @@ export const ContentData: readonly ContentItem[] = [
     title: 'Star Wars Resistance',
     type: 'series',
     releaseYear: 2018,
+    poster: '/posters/resistance.jpg',
     order: { release: 14, chronological: 23 }
   },
   {
@@ -174,6 +197,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 2015,
     episode: 'Episode VII',
+    poster: '/posters/the-force-awakens.jpg',
     order: { release: 10, chronological: 24 }
   },
   {
@@ -182,6 +206,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 2017,
     episode: 'Episode VIII',
+    poster: '/posters/the-last-jedi.jpg',
     order: { release: 12, chronological: 25 }
   },
   {
@@ -190,6 +215,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'movie',
     releaseYear: 2019,
     episode: 'Episode IX',
+    poster: '/posters/the-rise-of-skywalker.jpg',
     order: { release: 16, chronological: 26 }
   }
 ];

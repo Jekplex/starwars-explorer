@@ -6,6 +6,7 @@ import { ContentItem } from "../../models/content-item";
 import { ContentData } from "../../data/content-data";
 import { Timeline } from '../components/timeline/timeline';
 import { Footer } from '../components/footer/footer';
+import { BackToTop } from '../components/back-to-top/back-to-top';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { Footer } from '../components/footer/footer';
     RouterOutlet,
     CommonModule,
     Timeline,
-    Footer
+    Footer,
+    BackToTop
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

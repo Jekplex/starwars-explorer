@@ -5,13 +5,15 @@ import { RouterOutlet } from '@angular/router';
 import { ContentItem } from "../../models/content-item";
 import { ContentData } from "../../data/content-data";
 import { Timeline } from '../components/timeline/timeline';
+import { Footer } from '../components/footer/footer';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
     CommonModule,
-    Timeline
+    Timeline,
+    Footer
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

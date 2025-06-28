@@ -15,4 +15,10 @@ export class Timeline {
   @Input() dataSet: ContentItem[] = [];
   @Input() isReleaseOrder: Boolean = false;
   
+  openDetails(item: ContentItem) {
+    // e.g. navigate to a detail page or open a modal
+    console.log('Open details for', item);
+    // this.router.navigate(['/details', item.id]); 
+  }
+
 }

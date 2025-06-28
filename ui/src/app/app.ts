@@ -26,15 +26,15 @@ export class App implements OnInit {
 
   // View Pill Flipper
 
-  private isReleaseView : boolean = false;
+  private isReleaseOrder : boolean = false;
   
   setReleaseView(bool: boolean): void {
-    this.isReleaseView = bool;
+    this.isReleaseOrder = bool;
     this.setCurrentDataSet()
   }
   
-  getReleaseView(): boolean {
-    return this.isReleaseView;
+  getReleaseOrder(): boolean {
+    return this.isReleaseOrder;
   }
 
   // Content Data
@@ -50,7 +50,7 @@ export class App implements OnInit {
   }
 
   private setCurrentDataSet(): void {
-    if (this.isReleaseView) {
+    if (this.isReleaseOrder) {
       this.currentDataSet = this.contentDataReleaseOrder;
     } else {
       this.currentDataSet = this.contentDataChronologicalOrder;

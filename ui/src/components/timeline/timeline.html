@@ -9,14 +9,14 @@
         <img
           class="h-full w-full object-cover"
           [src]="item.poster"
-          [alt]="item.title"
+          [alt]="'A poster for ' + item.title  + ' ' + item.type"
         />
       </div>
 
       <!-- Details pane -->
       <div class="p-6 flex-1">
         <h3 class="text-xl font-semibold text-gray-900">
-          {{ item.title }}
+          {{ item.displayTitle }}
         </h3>
         <div class="mt-1 flex items-center space-x-2 text-sm text-gray-600">
           <span>{{ item.releaseYear }}</span>

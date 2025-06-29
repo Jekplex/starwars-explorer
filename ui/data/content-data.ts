@@ -1,4 +1,5 @@
 import { ContentItem } from "../models/content-item";
+import { CloneWarsSeriesData } from "./clone-wars-data";
 
 export const ContentData: readonly ContentItem[] = [
   {
@@ -46,6 +47,7 @@ export const ContentData: readonly ContentItem[] = [
     type: 'series',
     releaseYear: 2008,
     poster: '/posters/clone-wars-series.jpg',
+    seriesData: CloneWarsSeriesData,
     order: { release: 8, chronological: 5 }
   },
   {

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ContentItem } from '../../../models/content-item';
 import { CommonModule } from '@angular/common';
 
@@ -10,15 +10,19 @@ import { CommonModule } from '@angular/common';
   templateUrl: './timeline.html',
   styleUrl: './timeline.css'
 })
-export class Timeline {
+export class Timeline implements OnInit {
 
   @Input() dataSet: ContentItem[] = [];
   @Input() isReleaseOrder: Boolean = false;
-  
-  openDetails(item: ContentItem) {
-    // e.g. navigate to a detail page or open a modal
-    console.log('Open details for', item);
-    // this.router.navigate(['/details', item.id]); 
+
+  ngOnInit() {
+    // Initialize each item with a closed state
+    this.dataSet.forEach(item => item.open = false);
+  }
+
+  openDetails(item: any) {
+    // Toggle only the clicked item; allow multiple open
+    item.open = !item.open;
   }
 
 }

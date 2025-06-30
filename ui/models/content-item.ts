@@ -15,4 +15,5 @@ export interface ContentItem {
   readonly poster: string;
   readonly order: ContentItemOrder;
   readonly seriesData?: Episode[]
+  open?: boolean;
 }

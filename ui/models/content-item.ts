@@ -16,4 +16,5 @@ export interface ContentItem {
   readonly order: ContentItemOrder;
   readonly seriesData?: Episode[]
   open?: boolean;
+  selected?: boolean;
 }

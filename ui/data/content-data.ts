@@ -9,7 +9,8 @@ export const ContentData: readonly ContentItem[] = [
     type: 'series',
     releaseYear: 2024,
     poster: '/posters/the-acolyte.jpg',
-    order: { release: 24, chronological: 1 }
+    order: { release: 24, chronological: 1 },
+    selected: true
   },
   {
     id: 'phantom-menace',

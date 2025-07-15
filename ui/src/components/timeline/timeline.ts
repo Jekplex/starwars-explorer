@@ -1,11 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ContentItem } from '../../../models/content-item';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-timeline',
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   templateUrl: './timeline.html',
   styleUrl: './timeline.css'

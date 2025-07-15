@@ -6,6 +6,7 @@ import { ContentData } from "../../data/content-data";
 import { Timeline } from '../components/timeline/timeline';
 import { Footer } from '../components/footer/footer';
 import { BackToTop } from '../components/back-to-top/back-to-top';
+import { StartModal } from "../components/start-modal/start-modal";
 
 @Component({
   selector: 'app-root',
@@ -14,8 +15,9 @@ import { BackToTop } from '../components/back-to-top/back-to-top';
     CommonModule,
     Timeline,
     Footer,
-    BackToTop
-  ],
+    BackToTop,
+    StartModal
+],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

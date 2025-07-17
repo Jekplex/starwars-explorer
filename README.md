@@ -25,7 +25,7 @@ This project serves as a **prototype** to experiment with UI concepts, component
 To run the project locally:
 
 ```bash
-git clone https://github.com/your-username/star-wars-tracker.git
+git clone https://github.com/Jekplex/starwars-explorer.git
 cd star-wars-tracker/ui
 npm install
 ng serve

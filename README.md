@@ -28,7 +28,7 @@ To run the project locally:
 git clone https://github.com/Jekplex/starwars-explorer.git
 cd star-wars-tracker/ui
 npm install
-ng serve
+npm run start
 ```
 
 Then open your browser to `http://localhost:4200`.

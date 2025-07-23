@@ -10,10 +10,37 @@
         Start Fresh
       </button>
       <button
-        (click)="importData(); showImportExportModal = false"
+        (click)="openPasteModal()"
         class="px-4 py-2 border border-gray-300 text-gray-700 bg-white rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300"
       >
         Import Data
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div *ngIf="showPasteModal" class="fixed inset-0 bg-black/10 backdrop-blur-sm flex items-center justify-center z-50">
+  <div class="bg-white border border-gray-300 rounded-lg shadow-md p-6 w-11/12 max-w-sm">
+    <h2 class="text-lg font-semibold text-gray-900 mb-2">Paste Your Data</h2>
+    <textarea
+      [(ngModel)]="pasteDataText"
+      class="w-full h-32 border border-gray-300 rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      placeholder="Paste JSON data here..."
+    ></textarea>
+    <div class="flex justify-end space-x-3">
+      <button
+        (click)="cancelPaste()"
+        class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300"
+      >
+        Cancel
+      </button>
+      <button
+        (click)="confirmImport()"
+        class="px-4 py-2 bg-indigo-700 text-white rounded-md hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        Import
       </button>
     </div>
   </div>

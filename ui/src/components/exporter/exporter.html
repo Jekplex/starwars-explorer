@@ -1,0 +1,33 @@
+<button (click)="exportUserData()" aria-label="Export user data" class="
+    fixed z-50
+    bottom-6 left-6
+    bg-indigo-600 text-white
+    font-bold py-2 px-4
+    rounded-full
+    shadow-xl
+    transform transition-all duration-200 ease-out
+    hover:scale-110 hover:bg-indigo-700
+    focus:outline-none focus:ring-4 focus:ring-indigo-300 focus:ring-offset-2 focus:ring-offset-gray-900
+  ">
+    Export User Data
+</button>
+
+<!-- Model -->
+<div *ngIf="showUserData" class="fixed inset-0 bg-black/10 backdrop-blur-sm flex items-center justify-center z-50">
+    <div class="bg-white border border-gray-300 rounded-lg shadow-md p-6 w-11/12 max-w-sm">
+        <h2 class="text-lg font-semibold text-gray-900 mb-2">Your Exported Data</h2>
+        <textarea [(ngModel)]="userData" readonly
+            class="w-full h-32 border border-gray-300 rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Copy your data here..."></textarea>
+        <div class="flex justify-end space-x-3">
+            <button (click)="cancelDataExport()"
+                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                Close
+            </button>
+            <button (click)="copyData()" [disabled]="copySuccess" class="px-4 py-2 bg-indigo-700 text-white rounded-md 
+                hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                {{ copySuccess ? 'Copied!' : 'Copy Data' }}
+            </button>
+        </div>
+    </div>
+</div>

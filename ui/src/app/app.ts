@@ -7,6 +7,7 @@ import { Timeline } from '../components/timeline/timeline';
 import { Footer } from '../components/footer/footer';
 import { BackToTop } from '../components/back-to-top/back-to-top';
 import { StartModal } from "../components/start-modal/start-modal";
+import { Exporter } from "../components/exporter/exporter";
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { StartModal } from "../components/start-modal/start-modal";
     Timeline,
     Footer,
     BackToTop,
-    StartModal
+    StartModal,
+    Exporter
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'
@@ -76,6 +78,11 @@ export class App implements OnInit {
     return this.currentDataSet;
   }
 
-  //
+  // Export content selection as JSON string
+  public exportUserDataAsString(): string {
+    return JSON.stringify(
+      ContentData.map(({ id, selected }) => ({ id, selected }))
+    );
+  }
 
 }

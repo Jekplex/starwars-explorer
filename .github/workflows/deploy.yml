@@ -19,9 +19,11 @@ jobs:
           node-version: '22.13.0'
 
       - name: 📦 Install dependencies
-        run: npm i
+        working-directory: ./ui
+        run: npm ci
 
       - name: 🛠️ Build Angular app (GH Pages)
+        working-directory: ./ui
         run: npm run build:gh-pages
 
       - name: 🚀 Deploy to GitHub Pages
